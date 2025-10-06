@@ -42,7 +42,7 @@ function Projects() {
               🔗 View GitHub Repo
             </a>
             <a
-              href="https://harithambu.vercel.app/"
+              href="https://iamharitha.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
