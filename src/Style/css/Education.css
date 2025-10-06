@@ -1,0 +1,144 @@
+.education-page {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #e9f5ff, #ffffff);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.education-header {
+  text-align: center;
+  margin-bottom: 50px;
+  background: linear-gradient(to right, #1da1f2, #0f75bc);
+  padding: 30px;
+  border-radius: 15px;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  animation: fadeInDown 1s ease forwards;
+}
+
+.education-header h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.education-header p {
+  font-size: 17px;
+  opacity: 0.9;
+}
+
+.education-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  position: relative;
+}
+
+.education-card {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  gap: 25px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+.education-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.edu-logo img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #fff;
+  padding: 8px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.education-card:hover .edu-logo img {
+  transform: scale(1.05);
+}
+
+.edu-details h2 {
+  font-size: 22px;
+  color: #1da1f2;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.edu-details p {
+  font-size: 15px;
+  color: #555;
+  margin: 3px 0;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .education-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .edu-logo img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .edu-details h2 {
+    font-size: 18px;
+  }
+}
+
+/* === Animations === */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.back-button {
+  display: inline-block;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  color: #1da1f2;
+  border: 2px solid #1da1f2;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.back-button:hover {
+  background-color: #1da1f2;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(29, 161, 242, 0.4);
+}

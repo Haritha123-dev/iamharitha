@@ -1,0 +1,107 @@
+.projects-page {
+  background-color: #fff;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+/* Header Section */
+.projects-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.projects-header h1 {
+  font-size: 36px;
+  color: #1da1f2;
+  margin-bottom: 10px;
+}
+
+.projects-header p {
+  font-size: 16px;
+  color: #555;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Grid Layout */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Section Titles */
+.project-section {
+  flex: 1 1 45%;
+  background: #f9fafc;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.project-section:hover {
+  transform: translateY(-5px);
+}
+
+.project-section h2 {
+  font-size: 22px;
+  color: #1da1f2;
+  margin-bottom: 20px;
+}
+
+/* Project Cards */
+.project-card {
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h3 {
+  font-size: 18px;
+  color: #111;
+  margin-bottom: 12px;
+}
+
+.project-card p {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.project-card ul {
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
+.project-card ul li {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+/* Links */
+.project-link {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 8px 12px;
+  background-color: #1da1f2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.project-link:hover {
+  background-color: #0077cc;
+}
